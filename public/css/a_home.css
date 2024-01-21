@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Caveat&family=Genos:wght@500&family=Inter:wght@700&family=Montserrat:wght@500&family=Noto+Serif:wght@500&family=Poppins:wght@700&family=Syne:wght@700&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Caveat&family=Genos:wght@500&family=Inter:wght@700&family=Montserrat:wght@500&family=Noto+Serif:wght@500&family=Syne:wght@700&family=Ubuntu:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+.container-fluid{
+    height: 100vh;
+}
+.top{
+    height: 100%;
+}
+.bar_for_small{
+    display: none;
+    border: 1px solid #CDCDCD;
+    background: #FFF;  
+}
+.left{
+    padding: 12% 5%;
+}
+.left_side{
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading > h4{
+    font-family: Poppins;
+    color: #5C5C5C;
+    font-weight: 700;
+}
+.form{
+    height: 80%; 
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    width: 80%;
+    text-align: left;
+    font-family: Montserrat;
+    margin-top: 5px;
+}
+input{
+    color: #CDCDCD;
+    width: 80%;
+    height: 15%;
+    margin: 2% 5%;
+    padding: 1% 3%;
+    margin-top: 2px;
+    border: 1px solid #CDCDCD;
+    font-family: Montserrat;
+    text-align: left;
+    border-radius: 5px;
+}
+.login_btn{
+    height: 15%;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 10px;
+    background: #0500FF;
+    border: 0;
+}
+button{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+/* right side part of website */
+.right{
+    border: 1px solid #CDCDCD;
+    padding: 12% 5%;
+}
+.right_side{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_rects{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    width: 4%; height: 8%;
+    background-color: #0500FF;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+}
+.only_user_ids{
+    height: 90%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user_ol{
+    width: 90%;
+    height: 40%;
+    background:#EAECFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 5%;
+    border-radius: 7px;
+}
+.view_btn{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.view_btn > button{
+    width: 20%;
+    height: 70%;
+    background-color: #0500FF;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    border: 0;
+    border-radius: 7px;
+}
+.user_il{
+    background-color: #FFF;
+    text-align: center;
+    width: 75%;
+    height: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #CDCDCD;
+    padding: 2% 4%;
+    flex-shrink: 2;
+}
+.only_user_ids{
+    display: none;
+}
+.md_alert{
+    display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .login_btn{
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .user_ol{
+        height: 25%;
+    }
+    .view_btn > button{
+        height: 40%;
+    }
+    .right{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    label{
+        width: 90%;
+    }
+    input{
+        width: 90%;
+        height: 13%;
+        
+    }
+    form{
+        justify-content: start;
+        padding-top: 10%;
+    }
+    .login_btn{
+        width: 90%;
+        height: 13%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .bar_for_small{
+        display: block;
+        height: 5%;
+    }
+    .left{
+        height: 40%;
+        padding: 0;
+    }
+    form{
+        justify-content: start;
+    }
+    .heading{
+        height: 15%;
+        text-align: center;
+    }
+    .form{
+        height: 80%;
+    }
+    .right{
+        height: 55%;
+        border-top: 10px solid #CDCDCD;
+        padding: 0;
+    }
+    .user_ol{
+        width:80%;
+        height: 35%;
+    }
+    .view_btn{
+        width: 80%;
+    }
+    .view_btn > button{
+        height: 50%;
+    }
+    
+}
